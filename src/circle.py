@@ -8,6 +8,7 @@ def area(r):
         Return value:
             Area of a circle with radius 'r'
     '''
+    if r <= 0: raise ValueError("Radius is not positive")
     return math.pi * r * r
 
 def perimeter(r):
@@ -18,4 +19,5 @@ def perimeter(r):
         Return value:
             Circumference of a circle with radius 'r'
     '''
+    if r <= 0: raise ValueError("Radius is not positive")
     return 2 * math.pi * r

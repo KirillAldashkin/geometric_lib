@@ -7,6 +7,8 @@ def area(a, h):
         Return value:
             Area of a triangle with base 'a' and height 'h'
     '''
+    if a <= 0: raise ValueError("Base is not positive")
+    if h <= 0: raise ValueError("Height is not positive")
     return a * h / 2 
 
 def perimeter(a, b, c): 
@@ -19,4 +21,7 @@ def perimeter(a, b, c):
         Return value:
             Perimeter of a triangle with sides 'a', 'b' and 'c'
     '''
+    if a <= 0: raise ValueError("Side 'a' is not positive")
+    if b <= 0: raise ValueError("Side 'b' is not positive")
+    if c <= 0: raise ValueError("Side 'c' is not positive")
     return a + b + c 
