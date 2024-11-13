@@ -7,6 +7,8 @@ def area(a, b):
         Return value:
             Area of a rectangle with sides 'a' and 'b'
     '''
+    if a <= 0: raise ValueError("Side 'a' is not positive")
+    if b <= 0: raise ValueError("Side 'b' is not positive")
     return a * b 
 
 def perimeter(a, b): 
@@ -18,4 +20,6 @@ def perimeter(a, b):
         Return value:
             Perimeter of a rectangle with sides 'a' and 'b'
     '''
+    if a <= 0: raise ValueError("Side 'a' is not positive")
+    if b <= 0: raise ValueError("Side 'b' is not positive")
     return 2 * (a + b)
