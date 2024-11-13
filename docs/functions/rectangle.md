@@ -11,6 +11,9 @@ _Calculates the area of a rectangle with given sides_
 **Return value:**  
 Area of a rectangle with sides `a` and `b`
 
+**Raises:**
+* `ValueError` - if any side is not positive
+
 **Examples:**
 ```py
 rectangle.area(2, 3) # 6
@@ -26,6 +29,9 @@ _Calculates the perimeter of a rectangle with given sides_
 
 **Return value:**  
 Perimeter of a rectangle with sides `a` and `b`
+
+**Raises:**
+* `ValueError` - if any side is not positive
 
 **Examples:**
 ```py

@@ -6,6 +6,8 @@ def area(a, b):
             b - Length of the second side
         Return value:
             Area of a rectangle with sides 'a' and 'b'
+        Raises:
+            ValueError - if any side is not positive
     '''
     if a <= 0: raise ValueError("Side 'a' is not positive")
     if b <= 0: raise ValueError("Side 'b' is not positive")
@@ -19,6 +21,8 @@ def perimeter(a, b):
             b - Length of the second side
         Return value:
             Perimeter of a rectangle with sides 'a' and 'b'
+        Raises:
+            ValueError - if any side is not positive
     '''
     if a <= 0: raise ValueError("Side 'a' is not positive")
     if b <= 0: raise ValueError("Side 'b' is not positive")
