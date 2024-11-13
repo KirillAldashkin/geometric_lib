@@ -11,6 +11,9 @@ _Calculates the area of a triangle with a given height and base_
 **Return value:**  
 Area of a triangle with base `a` and height `h`
 
+**Raises:**
+* `ValueError` - if base or height is not positive
+
 **Examples:**
 ```py
 triangle.area(3, 3) # 4,5
@@ -27,6 +30,9 @@ _Calculates the perimeter of a triangle with given sides_
 
 **Return value:**  
 Perimeter of a triangle with sides `a`, `b` and `c`
+
+**Raises:**
+* `ValueError` - if any side is not positive
 
 **Examples:**
 ```py

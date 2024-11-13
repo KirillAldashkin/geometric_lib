@@ -10,6 +10,9 @@ _Calculates the area of a square with a given side_
 **Return value:**  
 Area of a square with side `a`
 
+**Raises:**
+* `ValueError` - if side is not positive
+
 **Examples:**
 ```py
 square.area(1) # 1
@@ -24,6 +27,9 @@ _Calculates the perimeter of a square with a given side_
 
 **Return value:**  
 Perimeter of a square with side 'a'
+
+**Raises:**
+* `ValueError` - if side is not positive
 
 **Examples:**
 ```py

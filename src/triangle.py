@@ -6,6 +6,8 @@ def area(a, h):
             h - Length of the height
         Return value:
             Area of a triangle with base 'a' and height 'h'
+        Raises:
+            ValueError - if base or height is not positive
     '''
     if a <= 0: raise ValueError("Base is not positive")
     if h <= 0: raise ValueError("Height is not positive")
@@ -20,6 +22,8 @@ def perimeter(a, b, c):
             c - Length of the third side
         Return value:
             Perimeter of a triangle with sides 'a', 'b' and 'c'
+        Raises:
+            ValueError - if any side is not positive
     '''
     if a <= 0: raise ValueError("Side 'a' is not positive")
     if b <= 0: raise ValueError("Side 'b' is not positive")

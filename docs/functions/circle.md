@@ -10,6 +10,9 @@ _Calculates the area of a circle with a given radius_
 **Return value:**  
 Area of a circle with radius `r`
 
+**Raises:**
+* `ValueError` - if radius is not positive
+
 **Examples:**
 ```py
 circle.area(1) # 3,141592...
@@ -24,6 +27,9 @@ _Calculates the circumference of a circle with a given radius_
 
 **Return value:**  
 Circumference of a circle with radius `r`
+
+**Raises:**
+* `ValueError` - if radius is not positive
 
 **Examples:**
 ```py
